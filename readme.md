@@ -57,3 +57,8 @@ If you want to fetch tokens as "str",
 ```
 str(d["hoge"])
 ```
+
+## Notice
+
+Don't forget to except keys.shelve from a viewpoint of security if you will upload your application with ToAtmFp.
+For instance, when you want to push app to public repository, write "keys.shelve" in .gitignore.
