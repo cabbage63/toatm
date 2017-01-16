@@ -52,6 +52,11 @@ You can obtain the output shown below.
 ```
 {'access_token': u'****', 'access_token_secret': u'****'}
 ```
+API keys configured in Step 1 are also obtained:
+```
+print d["consumer_key"]
+print d["consumer_secret"]
+```
 
 If you want to fetch tokens as "str",
 ```
