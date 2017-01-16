@@ -63,6 +63,36 @@ If you want to fetch tokens as "str",
 str(d["hoge"])
 ```
 
+## Basic Snippets
+
+### download timeline
+```
+# -*- coding: utf-8 -*-
+
+import shelve
+import tweepy
+
+# Configure screen name @~~~~
+SCREEN_NAME = "~~~~"
+
+# Open database file
+d = shelve.open('keys.shelve')
+consumer_key = d['consumer_key']
+consumer_secret = d['consumer_secret']
+access_token = d[SCREEN_NAME]['access_token']
+access_token_secret = d[SCREEN_NAME]['access_token_secret']
+
+# Setup tweepy
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth)
+
+# Main
+public_tweets = api.home_timeline()
+for tweet in public_tweets:
+    print tweet.text
+```
+
 ## Notice
 
 Don't forget to except keys.shelve from a viewpoint of security if you will upload your application with ToAtmFp.
