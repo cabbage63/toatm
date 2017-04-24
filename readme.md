@@ -3,6 +3,23 @@ Twitter OAuth access token management tool for python twitter app developer.
 You can easily use access token of user who did not create twitter API of the app that you are developing.
 
 ## Usage
+### 0. Install Tweepy
+If you want to install the latest Tweepy via pip:
+
+```
+pip install tweepy
+```
+
+You may also use Git to clone the repository from Github and install it manually:
+
+```
+git clone https://github.com/tweepy/tweepy.git
+cd tweepy
+python setup.py install
+```
+
+`
+
 ### 1. Run ToAtmFp app.
 
 ```
