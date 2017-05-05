@@ -1,3 +1,5 @@
+It has been tested and approved for use in python2.7.9
+
 #Twitter OAuth Access Token Manager for Python(ToAtmFp)
 Twitter OAuth access token management tool for python twitter app developer.
 You can easily use access token of user who did not create twitter API of the app that you are developing.
